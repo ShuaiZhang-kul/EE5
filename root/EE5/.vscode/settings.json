@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sbuffer.h": "c",
+        "config.h": "c"
+    }
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style type="text/css">
+    .csstest{color:blue}
+  </style>
+<style type="text/css">
+  .p1,.p2,.p3,.p4,.p5,.p6
+  {
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #404142;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 0.2em rgb(102, 100, 101);
+  }
+  .patient
+  {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  .title
+  {
+
+    margin: 20px;
+  }
+  .box
+  {
+  float:left;
+  text-align: center;
+	height:450px;
+  width: 350px;;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin:30px;
+  margin-left: 90px;
+  margin-top: 0px;
+  border: solid;
+  border-color: rgb(120, 120, 121);
+  -moz-box-shadow:5px 5px  rgb(218, 224, 228);
+  -webkit-box-shadow:5px 5px  rgb(225, 226, 228);
+     box-shadow:5px 5px  rgb(218, 218, 218);
+     
+  }
+  .speaker
+  {
+    margin-top: 21spx;
+  }
+  .setting_title
+  {
+    border-radius: 10px;
+    border: solid;
+    border-color:#AD919D;
+    background-color:#AD919D;
+    color:rgb(255,255,255);
+    margin-right: 11px;
+    font-weight: 300;
+    font-weight: bolder;
+  }
+  .Group_of_patients
+  {
+    text-align: center;
+    
+  }
+  .form-1
+  {
+    position: relative;
+    right: 10px;
+    font-size: small;
+    font-weight: 900;
+
+   
+  }
+  .form-2
+  {
+    position: relative;
+    right: 10px;
+    font-size: small;
+    font-weight: 900;
+ 
+  }
+  .box-of-schedule
+  {
+    width: 100%;
+    height:500px;
+    margin-bottom: 30px;
+    float: left;
+    position: relative;
+  }
+  .total-box
+  {
+    float: left;
+    top: 200px;
+    left: -30px;
+    width: 600px;
+    height: 300px ;
+    border-color: rgb(153, 30, 40);
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(250, 250, 250);
+    
+  }
+ 
+  .header-of-schedule
+  {
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    border-bottom: solid;
+    border-bottom-width: 1.8px;
+    border-bottom-color: rgb(255, 145, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    
+  }
+  .content-of-schedule
+  {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .icon-of-schedule
+  {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 50px;
+    
+  }
+  .title-of-schedule
+  {
+   
+    float: left;
+    position: relative;;
+    left: 45%;
+    top: 80px;
+    font-weight:bolder;
+   
+  }
+.data-of-schedule
+{
+  border-color: rgb(231, 8, 27);
+    float: left;
+    font-size: 30px;
+    font-weight: lighter;
+    color:rgb(250, 0, 0) ;
+    position: absolute;
+    top: 140px;
+    left: 38%;
+   
+}
+.process_label
+{
+  
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+</style>
+
+
+
+
+<head>
+
+  <head>
+    <title>De Spiegel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!--===============================================================================================-->
+    <script type='text/javascript' src='vendor/jquery/jquery-3.2.1.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+  
+  </head>
+
+
+  <title>Home: De Spiegel</title>
+
+    </head>
+                <!-- Start: Header -->     
+               
+      <body>
+     
+        <div id="page-wrap">
+          <nav>
+            <ul class="group">
+              <li><a href="index.html">Hoofdpagina</a></li>
+              <li><a href="agenda.html">Agenda</a></li>
+              <li><a href="tasklist.html">Takenlijst</a></li>
+              <li><a href="patient-page.html">Gastenlijst</a></li>
+              <li><a href="staff-page.html">medewerkers</a></li>
+              <li><a href="Quotes.html">Quotes</a></li>
+              <li style="float:right"><a class="active" href="logout.html">Uitloggen</a></li>
+              </ul>
+          </nav>
+        </div> 
+        <div class="Group_of_patients">
+          <h2 class="title">Group of patients</h2>
+          <div class="box">
+            <img src="images/speaker-1.png" class="speaker">
+            <h3 class=patient>patient 1 </h3>
+            <p class="p1">
+               Life isn’t about finding yourself.
+              Life is about creating yourself.</p>
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <label >Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+
+              <div>
+              <form action="save.php" class="form-1" method="post" >
+              <label>&nbsp;&nbsp;Assignment 4
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <input type="radio" value="1"  name="Assignment 1" />
+              <label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" value="2"  name="Assignment 1" />
+             </form>
+              </div>   
+                
+                 <form action="save.php" class="form-2" method="post" >
+                  <label>&nbsp;&nbsp;Assignment 1
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </label>
+                  <input type="radio" value="1"  name="Assignment 1" />
+                  <label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" value="2"  name="Assignment 1" />
+                 </form>
+                
+
+          </div>
+          <div class="box">
+            <img src="images/speaker-2.png" class="speaker">
+            <h3 class=patient>patient 2</h3>
+            <p class="p2"> I Will Find New Habits, 
+              New Thoughts, New Rules. 
+              I Will Become Something Else</p>
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <label>Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+                <div> 
+                  <form action="save.php" class="form-1" method="post" >
+                    <label class="assignment_now">Assignment 4
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1" name="Assignment 4" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 4" />
+                   </form>
+                  </div> 
+                   <form action="save.php" class="form-2" method="post" >
+                    <label>Assignment 1
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1"  name="Assignment 1" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 1" />
+                   </form>
+          </div>
+          <div class="box">
+            <img src="images/speaker-3.png" class="speaker">
+            <h3 class=patient>patient 3</h3>
+            <p class="p3">
+              There is great beauty in being yourself.</p>
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <label>Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+                <div> 
+                  <form action="save.php" class="form-1" method="post" >
+                    <label class="assignment_now">Assignment 4
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1" name="Assignment 4" />
+                    <label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 4" />
+                   </form>
+                  </div> 
+                   <form action="save.php" class="form-2" method="post" >
+                    <label>Assignment 1
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1"  name="Assignment 1" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 1" />
+                   </form>
+          </div>
+          <div class="box">
+            <img src="images/speaker-4.png" class="speaker">
+            <h3 class=patient>patient 4</h3>
+            <p class="p4">I am not afraid..I was born to do this.
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <label>Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+                <div> 
+                  <form action="save.php" class="form-1" method="post" >
+                    <label class="assignment_now">Assignment 4
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1" name="Assignment 4" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 4" />
+                   </form>
+                  </div> 
+                   <form action="save.php" class="form-2" method="post" >
+                    <label>Assignment 1
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1"  name="Assignment 1" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 1" />
+                   </form>
+            </p>
+          </div>
+          <div class="box">
+            <img src="images/speaker-5.png" class="speaker">
+            <h3 class=patient>patient 5</h3>
+            <p class="p5">Giving up is always an option, 
+              But it’s never my choice.</p>
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <label>Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+                <div> 
+                  <form action="save.php" class="form-1" method="post" >
+                    <label class="assignment_now">Assignment 4
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1" name="Assignment 4" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 4" />
+                   </form>
+                  </div> 
+                   <form action="save.php" class="form-2" method="post" >
+                    <label>Assignment 1
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1"  name="Assignment 1" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 1" />
+                   </form>
+          </div>
+          <div class="box">
+            <img src="images/speaker-6.png" class="speaker">
+            <h3 class=patient>patient 6</h3>
+            <p class="p6">I think it’s time to be happy again...</P>
+              <P class="setting_title">Quickly task setting</P>
+              <label class="process_label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                In-process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                 <label>Finished&nbsp;&nbsp;&nbsp;</label><br><br>
+                <div> 
+                  <form action="save.php" class="form-1" method="post" >
+                    <label class="assignment_now">Assignment 4
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1" name="Assignment 4" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 4" />
+                   </form>
+                  </div> 
+                   <form action="save.php" class="form-2" method="post" >
+                    <label>Assignment 1
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                    <input type="radio" value="1"  name="Assignment 1" />
+                    <label>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" value="2"  name="Assignment 1" />
+                   </form>
+          </div>
+        </div>
+    
+         
+    </body>
+    </html>
