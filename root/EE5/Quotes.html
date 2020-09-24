@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>De Spiegel</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/quote.css">
+<!--===============================================================================================-->
+	<style>
+	body
+	{
+		background-image:url('https://i.loli.net/2020/02/29/n7Gmiq2Vsj3Fypt.jpg');
+		background-repeat:no-repeat;
+		background-size:contain;
+	}
+	</style>
+
+	<script>
+	$(document).ready(function(){
+  		$(".quote").click(function(){
+			$("#today_quote").text($(this).text());
+  		});
+		
+		$(".delete-button").click(function(){
+    		$(this).parent().parent().remove();
+  		});
+	});
+	</script>
+
+	<script>
+		
+		function changeContent(id){
+			switch(id){
+				case 'table1':
+					changeTable(1);
+					break;
+				case 'table2':
+					changeTable(2);
+					break;
+				case 'table3':
+					changeTable(3);
+					break;
+				case 'table4':
+					changeTable(4);
+					break;
+				case 'table5':
+					changeTable(5);
+					break;
+			}
+		}
+
+		function changeTable(index){
+			for(i=1;i<6;i++){
+				document.getElementById('table'+i).style.display='none';
+				document.getElementById('a'+i).style.backgroundColor = "#3e3e47";
+			}
+			document.getElementById('a'+index).style.backgroundColor = "#85a2ad";
+			document.getElementById('table'+index).style.display='block';
+		}
+
+	</script>
+
+</head>
+
+
+<body>
+	
+	<div id="page-wrap" width: 100%>
+		<nav>
+			<ul class="group">
+				<li><a href="index.html">Hoofdpagina</a></li>
+				<li><a href="agenda.html">Agenda</a></li>
+				<li><a href="tasklist.html">Takenlijst</a></li>
+				<li><a href="patient-page.html">Gastenlijst</a></li>
+				<li><a href="staff-page.html">medewerkers</a></li>
+				<li><a href="Quotes.html">Quotes</a></li>
+				<li style="float:right"><a class="active" href="logout.html">Uitloggen</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<h2 id="page_description">Deze quote wordt momenteel weergegeven op het scherm:</h2>
+	<p id="today_quote">Het wordt regenachtig vandaag, vergeet je regenjas niet.</p>
+
+	<div id="center">
+		<div class="quote-table">
+			<ul id="menu">
+				<li><a id = "a1" class="active" href="#Alle" onclick="changeContent('table1');">Alle</a></li>
+				<li><a id = "a2" href="#Weer" onclick="changeContent('table2');">Weer</a></li>
+				<li><a id = "a3" href="#Spiritueel" onclick="changeContent('table3');">Spiritueel</a></li>
+				<li><a id = "a4" href="#Feest" onclick="changeContent('table4');">Feest</a></li>
+				<li><a id = "a5" href="#Overige" onclick="changeContent('table5');">Overige</a></li>
+				<li id="add-button"><a href="#add"><img src="images/addbutton.png" alt="Add" width="25" height="25"></a></li>
+			</ul>
+
+			<div id="table1">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr display=block; width="100%">
+						<td class="quote">Het is niet omdat een ander jouw waarde niet ziet, dat je daarom waardeloos bent.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>	
+	
+					<tr class="table-bg"; display=block; width="100%">
+						<td class="quote">Het wordt regenachtig vandaag, vergeet je regenjas niet.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+	
+					<tr display=block; width="100%">
+						<td class="quote">Gelukkige verjaardag Joske!</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+	
+					<tr class="table-bg"; display=block; width="100%">
+						<td class="quote">Zalig Pasen allemaal!</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+	
+					<tr display=block; width="100%">
+						<td class="quote">Wacht niet op een goede dag, maar probeer er een zelf te maken</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id= "table2" style="display:none">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr display=block; width="100%">
+						<td class="quote">Het wordt regenachtig vandaag, vergeet je regenjas niet.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>	
+
+				</table>
+			</div>
+
+			<div id="table3" style="display:none">
+				<table cellpadding="0" cellspacing="0" width="100%">
+					
+					<tr display=block; width="100%">
+						<td class="quote">Het is niet omdat een ander jouw waarde niet ziet, dat je daarom waardeloos bent.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>	
+		
+					<tr class="table-bg"; display=block; width="100%">
+						<td class="quote">Wacht niet op een goede dag, maar probeer er een zelf te maken.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+		
+				</table>
+			</div>
+
+			<div id="table4" style="display:none">
+				<table cellpadding="0" cellspacing="0" width="100%">
+					
+					<tr display=block; width="100%">
+						<td class="quote">Gelukkige verjaardag Joske!</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>	
+		
+					<tr class="table-bg"; display=block; width="100%">
+						<td class="quote">Zalig Pasen allemaal!</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>
+		
+				</table>
+			</div>
+
+			<div id= "table5" style="display:none">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				
+					<tr display=block; width="100%">
+						<td class="quote">Het is niet omdat een ander jouw waarde niet ziet, dat je daarom waardeloos bent.</td>
+						<td><a href="#" class="delete-button">Delete</a><a href="#" class="edit-button">Edit</a></td>
+					</tr>	
+
+				</table>
+			</div>
+
+		</div>
+
+
+		<div class="page">
+			<div class="page-left">Page 1 / 5, 5 records per page，total: 100 records</div>
+			<div class="page-right">
+				<a href="#previous">Previous</a>
+				<a href="#next">Next</a>
+				<input type="text" name="text" />
+				<a href="#" class="page-link">Jump</a>
+			</div>
+		</div>
+		<!--分页功能还未实现
+			三种方式
+				前台分页
+				后台分页
+				分页插件
+		-->
+	</div>
+	</div>		
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script type='text/javascript' src='vendor/jquery/jquery-3.2.1.min.js'></script>
+	<script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+	<script type='text/javascript' src='js/dynamicpage.js'></script>
+</body>
+</html>
